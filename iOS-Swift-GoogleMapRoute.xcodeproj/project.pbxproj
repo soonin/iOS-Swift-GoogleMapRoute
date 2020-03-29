@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03BB0C6417B49E0F69FAFFA6 /* libPods-iOS-Swift-GoogleMapRoute.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3EE564804D154D439B7CBB /* libPods-iOS-Swift-GoogleMapRoute.a */; };
 		FAAE602D2428128900D55F66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE602C2428128900D55F66 /* AppDelegate.swift */; };
 		FAAE602F2428128900D55F66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE602E2428128900D55F66 /* ViewController.swift */; };
 		FAAE60322428128900D55F66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAE60302428128900D55F66 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D3EE564804D154D439B7CBB /* libPods-iOS-Swift-GoogleMapRoute.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-Swift-GoogleMapRoute.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C28E70246E7D7F8EBDF2D5 /* Pods-iOS-Swift-GoogleMapRoute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Swift-GoogleMapRoute.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Swift-GoogleMapRoute/Pods-iOS-Swift-GoogleMapRoute.debug.xcconfig"; sourceTree = "<group>"; };
+		B3BA8D60F1DBCBD64DF6C4BA /* Pods-iOS-Swift-GoogleMapRoute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Swift-GoogleMapRoute.release.xcconfig"; path = "Target Support Files/Pods-iOS-Swift-GoogleMapRoute/Pods-iOS-Swift-GoogleMapRoute.release.xcconfig"; sourceTree = "<group>"; };
 		FAAE60292428128900D55F66 /* iOS-Swift-GoogleMapRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Swift-GoogleMapRoute.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAE602C2428128900D55F66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAE602E2428128900D55F66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03BB0C6417B49E0F69FAFFA6 /* libPods-iOS-Swift-GoogleMapRoute.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FE33A3B7F8E1E7272EE24DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D3EE564804D154D439B7CBB /* libPods-iOS-Swift-GoogleMapRoute.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD5BF7479BA8940B948B398A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87C28E70246E7D7F8EBDF2D5 /* Pods-iOS-Swift-GoogleMapRoute.debug.xcconfig */,
+				B3BA8D60F1DBCBD64DF6C4BA /* Pods-iOS-Swift-GoogleMapRoute.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FAAE60202428128800D55F66 = {
 			isa = PBXGroup;
 			children = (
 				FAAE602B2428128900D55F66 /* iOS-Swift-GoogleMapRoute */,
 				FAAE602A2428128900D55F66 /* Products */,
+				AD5BF7479BA8940B948B398A /* Pods */,
+				8FE33A3B7F8E1E7272EE24DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAAE603B2428128A00D55F66 /* Build configuration list for PBXNativeTarget "iOS-Swift-GoogleMapRoute" */;
 			buildPhases = (
+				9F01E73FF9286468D9EBA689 /* [CP] Check Pods Manifest.lock */,
 				FAAE60252428128900D55F66 /* Sources */,
 				FAAE60262428128900D55F66 /* Frameworks */,
 				FAAE60272428128900D55F66 /* Resources */,
+				502EFEDC61F4FBBB1F42B41A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		502EFEDC61F4FBBB1F42B41A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Swift-GoogleMapRoute/Pods-iOS-Swift-GoogleMapRoute-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Swift-GoogleMapRoute/Pods-iOS-Swift-GoogleMapRoute-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-Swift-GoogleMapRoute/Pods-iOS-Swift-GoogleMapRoute-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F01E73FF9286468D9EBA689 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Swift-GoogleMapRoute-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAAE60252428128900D55F66 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		FAAE603C2428128A00D55F66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C28E70246E7D7F8EBDF2D5 /* Pods-iOS-Swift-GoogleMapRoute.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +367,7 @@
 		};
 		FAAE603D2428128A00D55F66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3BA8D60F1DBCBD64DF6C4BA /* Pods-iOS-Swift-GoogleMapRoute.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
